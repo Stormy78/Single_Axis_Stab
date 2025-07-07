@@ -10,25 +10,25 @@ params.Sim.fSim = 10000; %[Hz]
 params.Sim.dtSim =1/params.Sim.fSim; %[sec]
 params.Sim.tSim = 10.0; %[s]
 
-params.Sim.Source.baseRateAmp_DPS = 50.0; %[deg/s]
+params.Sim.Source.baseRateAmp = deg2rad(50.0); %[rad/s]
 params.Sim.Source.baseRateFreq = 1.0; %[Hz]
 
 %% Plant params
 
-params.Plant.motorInertia = 0.1; %[g*cm^2]
-params.Plant.motorCoulombFriction = 0.5; %[mNm]
-params.Plant.motorStartFrictionFactor = 2.0; %[mNm]
-params.Plant.motorMaxTorque = 1.0; %[mNm]
+params.Plant.motorInertia = 0.1e-7; %[kg*m^2]
+params.Plant.motorCoulombFriction = 0.5e-3; %[Nm]
+params.Plant.motorStartFrictionFactor = 2.0;
+params.Plant.motorMaxTorque = 1.0e-3; %[mN]
 
-params.Plant.gearBacklashAngle = 0.1; %[deg]
+params.Plant.gearBacklashAngle = deg2rad(0.1); %[rad]
 params.Plant.gearRatio = 64;
 
-params.Plant.bearingCoulombFriction = 8.0; %[mNm]
-params.Plant.bearingStartFrictionFactor = 1.5; %[mNm]
+params.Plant.bearingCoulombFriction = 8.0e-3; %[Nm]
+params.Plant.bearingStartFrictionFactor = 1.5;
 
-params.Plant.harnessSpring = 50.0; %[mNm/rad]
+params.Plant.harnessSpring = 50.0e-3; %[Nm/rad]
 
-params.Plant.payloadJ = 50.0*1e-6; %[km*m^2]
+params.Plant.payloadJ = 50.0e-6; %[km*m^2]
 
 %% Control Params
 
