@@ -13,6 +13,7 @@ params.Sim.Source.baseRateFreq = 1.0; %[Hz]
 
 %% Plant params
 
+params.Plant.motorKT = 9.55e-3;
 params.Plant.motorInertia = 0.1e-7; %[kg*m^2]
 params.Plant.motorCoulombFriction = 0.5e-3; %[Nm]
 params.Plant.motorStartFrictionFactor = 2.0;
