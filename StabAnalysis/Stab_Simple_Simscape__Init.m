@@ -2,8 +2,6 @@
 
 clearvars;
 
-
-
 %% Sim Params
 
 params.Sim.fSim = 10000; %[Hz]
@@ -11,7 +9,7 @@ params.Sim.dtSim =1/params.Sim.fSim; %[sec]
 params.Sim.tSim = 10.0; %[s]
 
 params.Sim.Source.baseRateAmp = deg2rad(50.0); %[rad/s]
-params.Sim.Source.baseRateFreq = 0.1; %[Hz]
+params.Sim.Source.baseRateFreq = 1.0; %[Hz]
 
 %% Plant params
 
