@@ -103,14 +103,6 @@ if clResponsePlotFlag
 
     opt_bode.PhaseVisible = 'on';
 
-    % legend('show', 'Location', 'best')
-
-    % ax = findobj(gcf, 'type', 'axes', '-and', {'Visible', 'on'});
-
-    % for i = 1:numel(ax)
-    %     legend(ax(i), 'show', 'Location', 'best')
-    % end
-
     set_linewidth_ctrl(3)
 
 end
