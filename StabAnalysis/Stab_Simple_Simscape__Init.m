@@ -38,5 +38,9 @@ params.Gyro.dtClock = 1./params.Gyro.fClock; %[s]
 
 params.Controller.fClock = 10000.0;
 params.Controller.dtClock = 1./params.Controller.fClock;
-params.Controller.rateP = 10.0;
-params.Controller.rateI = 78.0;
+params.Controller.rateP = 0.002;
+params.Controller.rateI = 80;
+
+%% Performance Params
+
+params.Sensor.intTime = 10e-3; %[s]
